@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  <title>RUN the PLAY Simple01</title>
+  <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+  <link href="styles/demoStyles.css" rel="stylesheet" type="text/css" />
+<!-- We also provide hosted minified versions of all CreateJS libraries.
+http://code.createjs.com --><script type="text/javascript" src="libs/jquery/jquery-1.9.1.js"></script><script type="text/javascript" src="libs/jquery/jquery-ui-1.10.3.custom.min.js"></script><script type="text/javascript" src="libs/createjs/createjs-min.js"></script><script src="js/main.js"></script><script src="js/ui.js"></script><script src="js/fieldItems.js"></script> <script src="js/PlayerButton.js"></script><script src="js/PlayerBall.js"></script> </head>
+ <body>
+  <div id="loader">
+   &nbsp;</div>
+  <header>
+  <h1>
+   RunPlayWin</h1>
+  </header> <!-- Dialog Boxes -->
+  <div class="dialog" id="dialog-playerLabel">
+   Add text layer:<br />
+   Font: <select><option value="Calibri">Calibri</option><option value="Times New Roman">Times New Roman</option><option value="Courier New">Courier New</option></select> Size: <input class="input-size" style="width: 50px" type="text" value="12px" /> Color: <input class="input-color" style="width: 70px; background: black; color: silver;" type="text" value="black" /><br />
+   <input class="input-text" style="width: 318px" type="text" /><button class="button-ok">Ok</button><button class="button-cancel">Cancel</button></div>
+  <div class="dialog" id="dialog-inspector">
+   Change Player Label:<br />
+   <input style="width: 50px" type="text" /><button class="button-ok">Change</button><button class="button-cancel">Cancel</button></div>
+<!-- Main Menu -->  <ul id="mainmenu">
+   <li>
+    <button>SETUP</button>
+    <ul class="submenu">
+     <li>
+      <button id="button-openfile"></button><input type="file" /><button id="button-openfile"><span style="margin-top: -32px; display: block;">Open File</span></button></li>
+     <li>
+      <button id="button-openurl">Open URL</button></li>
+     <li>
+      <hr />
+     </li>
+     <li>
+      <button id="button-importfile"></button><input multiple="true" type="file" /><button id="button-importfile"><span style="margin-top: -32px; display: block;">Import File</span></button></li>
+     <li>
+      <button id="button-importurl">Import URL</button></li>
+     <li>
+      <hr />
+     </li>
+     <li>
+      <button id="button-save">Save</button></li>
+     <li>
+      <button id="button-print">Print</button></li>
+    </ul>
+   </li>
+   <li>
+    <button>VIEW</button>
+    <ul class="submenu">
+     <li>
+      <button id="button-reset">Reset</button></li>
+    </ul>
+   </li>
+   <li style="float: right;">
+    <button id="button-inspector">i</button></li>
+  </ul>
+  <canvas height="740" width="1024"></canvas></body>
+</html>
